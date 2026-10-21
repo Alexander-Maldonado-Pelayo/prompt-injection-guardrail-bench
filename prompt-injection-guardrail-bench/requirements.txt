@@ -1,0 +1,12 @@
+pandas>=2.0
+pyarrow>=14
+huggingface_hub>=0.25
+datasets>=2.19
+transformers>=4.44
+torch>=2.2
+scikit-learn>=1.4
+sentencepiece>=0.2      # DeBERTa tokenizer
+tiktoken>=0.7           # DeBERTa-v3 tokenizer conversion on newer transformers
+matplotlib>=3.8
+accelerate>=0.30
+gradio>=4.40            # Space only

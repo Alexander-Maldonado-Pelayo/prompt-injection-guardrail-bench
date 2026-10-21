@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+data/*.jsonl
+!data/sample_preview.jsonl
+train/out/
+results/*.json
+!results/.gitkeep
+.ipynb_checkpoints/
