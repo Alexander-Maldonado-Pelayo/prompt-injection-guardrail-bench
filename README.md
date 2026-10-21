@@ -48,23 +48,21 @@ Fine-tuning: open `train/finetune_colab.ipynb` in Google Colab (T4), or run
 Offline smoke test (no downloads): `python -m eval.run --predictor heuristic --data data/sample_preview.jsonl`
 
 ## Metrics
-
+----
 Besides accuracy/precision/recall/F1 the harness reports:
 
-- **FPR** — false-positive rate over all benign rows
+- **FPR**  false-positive rate over all benign rows
 - **FPR (hard)**  false-positive rate over benign rows designed to *look like* attacks. This is the number the project is about.
 - **recall by attack family** and **FPR by benign technique** — which inputs each detector gets wrong
-
+----
 ## Layout
-
-```
+---
 data/      load.py (download + profile), sample_preview.jsonl (50-row fixture)
 eval/      harness.py (metrics), run.py (CLI), errors.py, report.py, predictors/
 train/     finetune.py, finetune_colab.ipynb
 results/   <detector>__<split>.json, table__test.md, recall_vs_fpr__test.png
 space/     app.py — Gradio demo for the Hugging Face Space
-```
-
+---
 ## Limitations
 
 - The dataset is **synthetic** (template-expanded). Numbers show relative behavior between
