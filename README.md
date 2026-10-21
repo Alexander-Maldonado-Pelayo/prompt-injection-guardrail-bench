@@ -1,6 +1,6 @@
 # Prompt-Injection Guardrail Benchmark
 
-How often do prompt-injection detectors flag *legitimate* inputs — a security researcher
+How often do prompt-injection detectors flag *legitimate* inputs a security researcher
 asking how an attack works, an admin performing an action they're authorized to perform,
 a user quoting an attack string to report it? This project measures that false-positive
 rate for off-the-shelf guardrails and a small fine-tuned classifier, using the
@@ -52,7 +52,7 @@ Offline smoke test (no downloads): `python -m eval.run --predictor heuristic --d
 Besides accuracy/precision/recall/F1 the harness reports:
 
 - **FPR** — false-positive rate over all benign rows
-- **FPR (hard)** — false-positive rate over benign rows designed to *look like* attacks. This is the number the project is about.
+- **FPR (hard)**  false-positive rate over benign rows designed to *look like* attacks. This is the number the project is about.
 - **recall by attack family** and **FPR by benign technique** — which inputs each detector gets wrong
 
 ## Layout
