@@ -21,11 +21,11 @@ _pending_
 
 | Name | What it is | Runs where |
 |---|---|---|
-| `heuristic` | Regex keyword rules — the "WAF rule" floor | anywhere |
+| `heuristic` | Regex keyword rules  the "WAF rule" floor | anywhere |
 | `protectai` | ProtectAI `deberta-v3-base-prompt-injection-v2` | GPU/CPU |
-| `promptguard2` | Meta Llama Prompt Guard 2 (86M) — gated, accept license first | GPU/CPU |
-| `llamaguard3` | Llama Guard 3 1B via Ollama — a *content-safety* model, included to show safety ≠ injection detection | local Ollama |
-| `qwen3-zeroshot` | Qwen3 4B asked to classify, via Ollama — the "just ask an LLM" baseline | local Ollama |
+| `promptguard2` | Meta Llama Prompt Guard 2 (86M)  gated, accept license first | GPU/CPU |
+| `llamaguard3` | Llama Guard 3 1B via Ollama  a *content-safety* model, included to show safety ≠ injection detection | local Ollama |
+| `qwen3-zeroshot` | Qwen3 4B asked to classify, via Ollama  the "just ask an LLM" baseline | local Ollama |
 | `finetuned` | DeBERTa-v3-small fine-tuned on the train split (`train/finetune.py`) | Colab T4 |
 
 ## Quick start
