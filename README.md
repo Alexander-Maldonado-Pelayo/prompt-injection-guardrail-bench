@@ -53,7 +53,7 @@ Besides accuracy/precision/recall/F1 the harness reports:
 
 - **FPR**  false-positive rate over all benign rows
 - **FPR (hard)**  false-positive rate over benign rows designed to *look like* attacks. This is the number the project is about.
-- **recall by attack family** and **FPR by benign technique** — which inputs each detector gets wrong
+- **recall by attack family** and **FPR by benign technique**  which inputs each detector gets wrong
 ----
 ## Layout
 ---
